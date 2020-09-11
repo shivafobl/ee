@@ -4,13 +4,13 @@ from EEE import views
 
 urlpatterns=[
 
-      path('',views.home,name='home'),
+      path('',views.home,name='eee'),
 
     # #path("EEE_A/",views.EEE_A,name="EEE_A")
       path("index/",views.index,name="index"),
       path('gallery/', views.gallery, name='gallery'),
       #path('login/', views.login, name='login'),
-      path("home/",views.home,name="home"),
+      #path("home/",views.home,name="home"),
       path("about/",views.about,name="about"),
       path('edit/<int:id>',views.edit,name='edit'),
       path('delete/<int:id>', views.delete, name='delete'),
@@ -23,7 +23,7 @@ urlpatterns=[
       path('signin/',views.signin,name="signin"),
       
       
-      path('home/', views.home,name='home'),
+      #path('home/', views.home,name='home'),
       path('about/', views.about, name='testing'),
      
     #path('login/', views.login, name='login'),

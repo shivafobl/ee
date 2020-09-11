@@ -299,7 +299,8 @@ def facultyedit(request,num):
     return render(request,'EEE/facultyedit.html',{'form':instance})
 
 
-
+def eee(request):
+    return HttpResponse("welcome")
 
 
 
