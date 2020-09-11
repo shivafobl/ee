@@ -1,0 +1,12 @@
+{% extends 'EEE/mainpage.html' %}
+{% block foo %}
+<form class="form-signin" style="text-align: center" action="{% url 'faculty_data' %}" method="post">
+    {% csrf_token %}
+      <h1 class="h3 mb-3 font-weight-normal">Faculty SignUp</h1>
+    {{ instance.as_p }}
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Update</button>
+</form>
+
+
+
+{% endblock %}

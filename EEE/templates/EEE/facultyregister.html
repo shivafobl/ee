@@ -1,0 +1,17 @@
+{% extends 'EEE/mainpage.html' %}
+
+{% block foo %}
+<div>
+	<form class="form-signin" style="text-align: center;" action="{% url 'facultyregister' %}" method="post">
+    {% csrf_token %}
+      <h1 class="h3 mb-3 font-weight-normal" style="background-color:green;font-family: cursive;text-align: center;color: white;grid-row-end: center">Faculty Registration</h1>
+{{ form.as_p }}
+
+      
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
+</form>
+</div>
+
+
+
+{% endblock %}

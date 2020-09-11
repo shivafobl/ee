@@ -1,0 +1,26 @@
+
+{% extends 'EEE/mainpage.html' %}
+
+
+{% block title %}
+  
+  
+ <title>Update</title>
+
+{% endblock %}
+
+
+
+{% block foo %}
+
+<form class="form-signin" style="text-align: center;" method="post">
+    {% csrf_token %}
+      <h1 class="h3 mb-3 font-weight-normal">Update Details</h1>
+
+    <input type="text"  class="form-control" placeholder="UserName" name="username" value="{{ data.username }}"><br>
+    <input type="email" class="form-control" placeholder="Email address" name="email" value="{{ data.email }}"><br>
+    <input type="text" class="form-control" placeholder="Phone number" name="mobileno" value="{{ data.mobileno }}"><br>
+    <input type="text" class="form-control" placeholder="DOB" name="dob" value="{{ data.dob }}"><br>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Update</button>
+</form>
+{% endblock %}

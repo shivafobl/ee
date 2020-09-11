@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head> 
+   <h1 style="background-color:powderblue;color:red;font-family:verdan; font: italic small-caps bold 1px/30px Georgia, serif;font-size:300%;text-align: center;padding: 15px;"> EEStudentsLife </h1>
+  
+  {% block title %}
+<title>main</title>>
+  {% endblock %}
+<title> EEStudentsLife </title>
+
+
+<style>
+    .form-signin {
+        width: 100%;
+        max-width: 330px;
+        padding: 15px;
+        margin: auto;
+      }
+      form {
+        display: block;
+        margin-top: 0em;
+      }
+
+    </style>
+	
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+
+<body  style="background-color: white">
+
+
+
+{% include 'EEE/navbar.html' %}
+
+<div>
+    {% block foo %}
+
+  
+  
+
+    {% endblock %}
+</div>
+
+
+
+
+</body>
+</html>

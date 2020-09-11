@@ -1,0 +1,45 @@
+{% extends 'EEE/mainpage.html' %}
+
+
+
+{% block title %}
+<title>faculty data</title>
+  {% endblock %}
+
+
+{% block foo %}
+{% for message in messages %}
+<div class="alert alert-{{message.tag}} alert-dismissible">
+    <a href="#" class="close" data-dismiss="alert" aria-label="Close" aria-hidden="true">&times;</a>
+    <strong>{{ message }}</strong>
+    
+</div>
+{% endfor %}
+
+<div class="container" style="background-color:white;font-family: cursive;text-align: center;color: white;grid-row-end: center">
+<table class="table table-bordered">
+    <thead >
+        <th>Name of the faculty </th>
+        <th> Emp Id </th>
+        <th> Phone Number </th>
+        <th> email </th>
+        <th>Operations</th>
+    </thead>
+    <tbody>
+    {% for i in data %}
+    <tr>
+        <td>{{ i.name }}</td>
+        <td>{{ i.emp_id }}</td>
+        <td>{{ i.phone }}</td>
+        <td>{{ i.email }}</td>
+        <td>
+            <a href="{% url 'facultyedit' i.id %}" class="btn btn-info" >Edit</a>
+            <a href="{% url 'fdelete' i.id %}" class="btn btn-danger">Delete</a>
+        </td>
+    </tr>
+    {% endfor %}
+    </tbody>
+
+</table>
+</div>
+{% endblock %}
