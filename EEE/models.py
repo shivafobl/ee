@@ -14,15 +14,6 @@ class EeeStudentRegister(models.Model):
 
 
 
-
-
-
-	
-
-
-
-
-
 	# #user=models.ForeignKey(User,on_delete=models.CASCADE)
 
 	# student_name=models.CharField(max_length=10)
