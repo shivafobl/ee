@@ -33,7 +33,7 @@ urlpatterns = [
     # #path('login/', views.login, name='login'),
     # path('student/register/', views.register, name='register'),
     #path('student/display/', views.student_details, name='student_details'),
-    path('',include('EEE.urls')),
+    path('EEE/',include('EEE.urls')),
     #path('',include('EEE.urls')),
     #path('qr/',include('qr.urls')),
     #path('logon/',views.logon,name="logon"),
